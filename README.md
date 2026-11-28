@@ -111,6 +111,72 @@ python3 cleantelligent_agent.py tools     # list Cotlet.dev tools
 python3 cleantelligent_agent.py serve     # start the stdio MCP server (same as no argument)
 ```
 
+## What you can ask your AI to do in CleanTelligent (Otuvy)
+
+These are real jobs CleanTelligent (Otuvy) users asked about. Cotlet lets ChatGPT, Claude or any MCP client do them in your own signed-in CleanTelligent (Otuvy) account.
+
+### Inspections and reports
+
+#### Can ChatGPT or Claude list the CleanTelligent (Otuvy) sites with an overdue inspection and draft a plan for the lowest scored one?
+
+Yes. CleanTelligent, now Otuvy, keeps inspections and scores in Otuvy QM. With Cotlet, ChatGPT or Claude reads your signed-in Inspections screen, lists sites with an overdue inspection this month, ranks last month's scores and drafts a plan to fix the lowest one.
+
+Ask your agent: "List every CleanTelligent site where an inspection is overdue this month and the three lowest scored sites last month. Draft the plan to fix the worst one."
+
+As an API endpoint: Yes. Save the overdue-inspection list as an endpoint in Cotlet and call it every Monday from n8n, Make, Zapier or a script.
+
+#### Can ChatGPT or Claude build the monthly quality report for a client in CleanTelligent (Otuvy)?
+
+Yes. Otuvy QM has Reports & Dashboards, with AI insights built into its reports. With Cotlet, ChatGPT or Claude reads one client's inspection scores and closed work orders in your signed-in account and writes a one page summary for their director.
+
+Ask your agent: "Build the monthly quality report for Riverside Medical from inspection scores and closed work orders and write a one page summary for their director."
+
+As an API endpoint: Yes. Save the monthly report as an endpoint in Cotlet and call it on the first of each month from n8n, Make or Zapier.
+
+#### Can ChatGPT or Claude set up a client satisfaction survey in CleanTelligent (Otuvy) and tell me the response rate?
+
+Yes. Otuvy QM has Mobile Surveys under Advanced Features. With Cotlet, your agent sets up the survey for a site with your standard questions and reads the results of the last survey. Nothing is created until you say yes.
+
+Ask your agent: "Set up the mobile survey for the Harbor office with the standard questions and tell me the response rate from the last survey."
+
+### Work orders and alerts
+
+#### Can ChatGPT or Claude turn the deficiencies from a CleanTelligent (Otuvy) inspection into work orders?
+
+Yes. With Cotlet, your agent reads the deficiencies from an inspection in your signed-in Otuvy QM account and prepares a work order for each, with priority and assignee, using the Create a Web Work Order screen. Nothing is created until you say yes.
+
+Ask your agent: "Take the deficiencies from yesterday's Oak Plaza inspection and prepare a work order for each, with priority and assignee. Show me before you create any."
+
+#### Can ChatGPT or Claude clean up my CleanTelligent (Otuvy) work order inbox and draft replies to clients?
+
+Yes. With Cotlet, your agent reads the Work Orders overview in your signed-in Otuvy QM account, lists the orders open for more than 7 days by site and priority and drafts a status reply for each client contact. Nothing is sent until you say yes.
+
+Ask your agent: "Which CleanTelligent work orders are open for more than 7 days, by site and priority? Draft a status reply to each client contact."
+
+As an API endpoint: Yes. Save the open-order list as an endpoint in Cotlet and call it every morning from n8n, Make or Zapier.
+
+#### Can ChatGPT or Claude show which CleanTelligent (Otuvy) email notifications are on and suggest settings that stop flooding my managers?
+
+Yes. Otuvy QM has email notification settings under Setup. With Cotlet, your agent reads which notifications are on for work orders and replies and suggests the settings that cut duplicates for site managers. It only reads, and you change the settings yourself.
+
+Ask your agent: "Show which CleanTelligent email notifications are on for work orders and replies, and suggest the settings that cut duplicates for site managers."
+
+### Crew and hours
+
+#### Can ChatGPT or Claude check employee hours by site against the contract hours in CleanTelligent (Otuvy)?
+
+Partly. Otuvy Time Tracking shows employee hours, and Otuvy Frontline exports timesheets as CSV. With Cotlet, your agent reads this week's hours by site and compares them with the contract hours you give it, then flags the sites running over.
+
+Ask your agent: "Show employee hours by site this week from CleanTelligent time tracking and flag sites running over these contract hours: Oak Plaza 40, Harbor Office 25."
+
+As an API endpoint: Yes. Save the hours check as an endpoint in Cotlet and call it every Friday from n8n, Make, Zapier or a script.
+
+#### Can ChatGPT or Claude create daily task lists for my crew in CleanTelligent (Otuvy) and tell me which were not completed?
+
+Partly. Otuvy Frontline has its own AI List Creator inside its admin portal. With Cotlet, your agent creates tomorrow's checklist in the Frontline admin portal from your words and lists the task lists nobody completed yesterday. Nothing changes until you say yes.
+
+Ask your agent: "Create tomorrow's opening checklist for the Lakeside school in Otuvy Frontline and list the task lists nobody completed yesterday."
+
 ## Questions from CleanTelligent users
 
 **Does CleanTelligent have an API?**
